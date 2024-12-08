@@ -1,0 +1,40 @@
+### GET ALL Products
+# Retrieves all products from the database.
+GET http://localhost:3000/api/product HTTP/1.1
+Accept: application/json
+
+### GET ONE Product
+# Retrieves a single product by its ID.
+GET http://localhost:3000/api/product/6753b7170759264c228a0dff HTTP/1.1
+Accept: application/json
+
+### CREATE ONE Product
+# Adds a new product to the database.
+POST http://localhost:3000/api/product HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+   "name": "Sample Product",
+   "description": "A sample description of the product.",
+   "linkId": "sample-link-id",
+   "releaseDate": "2024-12-06T00:00:00Z"
+}
+
+### UPDATE ONE Product
+# Updates an existing product by ID.
+PUT http://localhost:3000/api/product/6753b7170759264c228a0dff HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+   "name": "Updated Product Name",
+   "description": "Updated product description for clarity.",
+   "linkId": "updated-link-id",
+   "releaseDate": "2024-12-06T00:00:00Z"
+}
+
+### DELETE ONE Product
+# Deletes a product by its ID.
+DELETE http://localhost:3000/api/product/6753b7170759264c228a0dff HTTP/1.1
+Accept: application/json
