@@ -7,6 +7,13 @@ require('dotenv').config()
 app = express()
 
 const port = process.env.PORT || 3000
+const appKey = process.env.APPKEY_MONGO;
+const appToken = process.env.APPTOKEN_MONGO;
+const uriTemplate = process.env.MONGODB_URI_TEMPLATE;
+
+const mongodbUri = uriTemplate
+  .replace('{APPKEY_MONGO}', appKey)
+  .replace('{APPTOKEN_MONGO}', appToken);
 
 
 // ----------------------------------- Middleware
@@ -22,7 +29,7 @@ app.get('/', (req, res) => {
 
 // ----------------------------------- MongoDB connection
 mongoose
-   .connect(process.env.MONGODB_URI)
+   .connect(mongodbUri)
    .then(() => console.info('Connected to MongoDB'))
    .catch((err) => console.error(err))
 
