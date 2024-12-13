@@ -32,19 +32,15 @@ router.get('/product/:id', getProduct, (req, res) => {
 
 // Update one Product
 router.put('/product/:id', getProduct, async (req, res) => {
-   const { name, description, linkId, releaseDate } = req.body;
-
-   if (!name || !description || !linkId || !releaseDate) {
-      return res.status(400).json({ message: 'Missing required fields' });
-   }
-
    try {
-      const updatedProduct = await productSchema.updateOne(
-            { _id: res.product._id },
-            { $set: { name, description, linkId, releaseDate } }
+      const updatedFields = req.body;
+      const updatedProduct = await productSchema.findByIdAndUpdate(
+         res.product._id,
+         { $set: updatedFields },
+         { new: true }
       );
-      if (updatedProduct.nModified === 0) {
-            return res.status(404).json({ message: 'No product found to update' });
+      if (!updatedProduct) {
+         return res.status(404).json({ message: 'No product found to update' });
       }
       res.status(200).json(updatedProduct);
    } catch (error) {
