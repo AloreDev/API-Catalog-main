@@ -17,6 +17,7 @@ const skuValueSchema = new mongoose.Schema({
    id: { type: String, required: true },
    name: { type: String, required: true },
    position: { type: Number, required: true },
+   quantity: { type: Number, required: true },
 });
 
 const skuSpecificationSchema = new mongoose.Schema({
@@ -26,6 +27,7 @@ const skuSpecificationSchema = new mongoose.Schema({
 const productSchema = new mongoose.Schema({
    productId: { type: String, required: true },
    productName: { type: String, required: true },
+   price: { type: Number, required: true },
    brand: { type: String, required: true },
    linkText: { type: String, required: true },
    releaseDate: { type: Date, required: true },

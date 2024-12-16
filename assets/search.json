@@ -2,6 +2,7 @@
    {
       "productId": "3150",
       "productName": "Camiseta de One Piece manga corta marfil para hombre",
+      "price": 84900,
       "brand": "ONE PIECE",
       "linkText": "camiseta-hombre-exterior-one-piece-238249",
       "releaseDate": "2024-11-15T00:00:00Z",
@@ -67,27 +68,32 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 1
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 3
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 0
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 5
                },
                {
                   "id": "60",
                   "name": "XL",
-                  "position": 5
+                  "position": 5,
+                  "quantity": 3
                }
             ]
          }
@@ -96,6 +102,7 @@
    {
       "productId": "3140",
       "productName": "Camiseta de Hello Kitty rosada manga corta para mujer",
+      "price": 79900,
       "brand": "HELLO KITTY",
       "linkText": "camiseta-mujer-exterior-hello-kitty-238212",
       "releaseDate": "2024-10-30T00:00:00Z",
@@ -161,22 +168,26 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 4
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 1
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 2
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 0
                }
             ]
          }
@@ -185,6 +196,7 @@
    {
       "productId": "3123",
       "productName": "Camiseta de Bart manga corta negra para hombre",
+      "price": 94900,
       "brand": "DISNEY",
       "linkText": "camiseta-hombre-exterior-simpsons-238149",
       "releaseDate": "2024-10-15T00:00:00Z",
@@ -248,27 +260,32 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 3
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 2
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 2
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 5
                },
                {
                   "id": "60",
                   "name": "XL",
-                  "position": 5
+                  "position": 5,
+                  "quantity": 0
                }
             ]
          }
@@ -277,6 +294,7 @@
    {
       "productId": "3115",
       "productName": "Camiseta de Coraje El Perro Cobarde gris manga corta para hombre",
+      "price": 89900,
       "brand": "CARTOON NETWORK",
       "linkText": "camiseta-hombre-exterior-courage-the-cow-238162",
       "releaseDate": "2024-10-15T00:00:00Z",
@@ -335,27 +353,32 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 0
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 0
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 2
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 1
                },
                {
                   "id": "60",
                   "name": "XL",
-                  "position": 5
+                  "position": 5,
+                  "quantity": 3
                }
             ]
          }
@@ -364,6 +387,7 @@
    {
       "productId": "3114",
       "productName": "Camiseta de Dexter’s azul manga corta para hombre",
+      "price": 89900,
       "brand": "CARTOON NETWORK",
       "linkText": "camiseta-hombre-exterior-dexter-s-labora-238160",
       "releaseDate": "2024-10-15T00:00:00Z",
@@ -430,27 +454,32 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 0
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 3
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 3
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 1
                },
                {
                   "id": "60",
                   "name": "XL",
-                  "position": 5
+                  "position": 5,
+                  "quantity": 2
                }
             ]
          }
@@ -459,6 +488,7 @@
    {
       "productId": "3113",
       "productName": "Camiseta de Cartoon Network blanca manga corta para hombre",
+      "price": 89900,
       "brand": "CARTOON NETWORK",
       "linkText": "camiseta-hombre-exterior-cartoon-network-238151",
       "releaseDate": "2024-10-15T00:00:00Z",
@@ -509,27 +539,32 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 2
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 0
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 4
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 3
                },
                {
                   "id": "60",
                   "name": "XL",
-                  "position": 5
+                  "position": 5,
+                  "quantity": 1
                }
             ]
          }
@@ -538,6 +573,7 @@
    {
       "productId": "3108",
       "productName": "Camiseta de Dragon Ball Z marfil estampada para hombre",
+      "price": 74900,
       "brand": "DRAGON BALL",
       "linkText": "camiseta-hombre-exterior-dragon-ball-z-238060",
       "releaseDate": "2024-10-15T00:00:00Z",
@@ -604,27 +640,32 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 1
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 0
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 0
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 2
                },
                {
                   "id": "60",
                   "name": "XL",
-                  "position": 5
+                  "position": 5,
+                  "quantity": 3
                }
             ]
          }
@@ -633,6 +674,7 @@
    {
       "productId": "3097",
       "productName": "Pijama de Snoopy de pantalón corto multicolor para mujer",
+      "price": 119900,
       "brand": "SNOOPY",
       "linkText": "pijama-mujer-interior-snoopy-238098",
       "releaseDate": "2024-08-15T00:00:00Z",
@@ -704,27 +746,32 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 1
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 3
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 1
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 0
                },
                {
                   "id": "60",
                   "name": "XL",
-                  "position": 5
+                  "position": 5,
+                  "quantity": 0
                }
             ]
          }
@@ -733,6 +780,7 @@
    {
       "productId": "3094",
       "productName": "Pijama de Minnie Mouse tipo batola manga corta rosada para mujer",
+      "price": 71900,
       "brand": "DISNEY",
       "linkText": "pijama--mujer-interior-minnie-238093",
       "releaseDate": "2024-08-15T00:00:00Z",
@@ -804,27 +852,32 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 2
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 2
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 1
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 0
                },
                {
                   "id": "60",
                   "name": "XL",
-                  "position": 5
+                  "position": 5,
+                  "quantity": 5
                }
             ]
          }
@@ -833,6 +886,7 @@
    {
       "productId": "3089",
       "productName": "Camiseta de Snoopy manga corta azul para mujer",
+      "price": 84900,
       "brand": "SNOOPY",
       "linkText": "camiseta-mujer-exterior-snoopy-238095",
       "releaseDate": "2024-08-15T00:00:00Z",
@@ -896,22 +950,26 @@
                {
                   "id": "56",
                   "name": "XS",
-                  "position": 1
+                  "position": 1,
+                  "quantity": 0
                },
                {
                   "id": "57",
                   "name": "S",
-                  "position": 2
+                  "position": 2,
+                  "quantity": 2
                },
                {
                   "id": "58",
                   "name": "M",
-                  "position": 3
+                  "position": 3,
+                  "quantity": 2
                },
                {
                   "id": "59",
                   "name": "L",
-                  "position": 4
+                  "position": 4,
+                  "quantity": 0
                }
             ]
          }

@@ -5,7 +5,7 @@ Accept: application/json
 
 ### GET ONE Product
 # Retrieves a single product by its ID.
-GET http://localhost:3000/api/product/675c2968b23e0e6a2cecdd22 HTTP/1.1
+GET http://localhost:3000/api/product/67609d58c716dfbf7ecfb6c5 HTTP/1.1
 Accept: application/json
 
 ### CREATE ONE Product
@@ -15,8 +15,116 @@ Content-Type: application/json
 Accept: application/json
 
 {
+   "productId": "3150",
+   "productName": "Camiseta de One Piece manga corta marfil para hombre",
+   "price": 84900,
+   "brand": "ONE PIECE",
+   "linkText": "camiseta-hombre-exterior-one-piece-238249",
+   "releaseDate": "2024-11-15T00:00:00Z",
+   "categories": ["/Hombre/Camisetas/", "/Hombre/"],
+   "link": "https://moviesshopco.vtexcommercestable.com.br/camiseta-hombre-exterior-one-piece-238249/p",
+   "País de fabricación": [
+      "Colombia \r\n- FABRICANTE/IMPORTADOR: Maquila Internacional de confección"
+   ],
+   "Registro Sic": ["811007991-8"],
+   "Composición": [
+      "Componente: Camiseta , Composición: 99% Algodón, 1% Elastano"
+   ],
+   "Especificaciones": [
+      "- Camiseta cuello redondo, manga corta\r\n -tela algodón para mayor frescura y suavidad, cuello en rib para mayor comodidad -cuello con elongación para facilitar el paso de la cabeza\r\n- Regular fit\r\n- Estampado en relieve"
+   ],
+   "Color": ["Marfil"],
+   "Cuidado": [
+      "- Lavar a mano o en máquina \r\n- No lavar en seco \r\n- No dejar en remojo \r\n- No retorcer ni exprimir \r\n- Usar agua fría \r\n- Usar jabón suave \r\n- No usar blanqueador \r\n- No blanquear \r\n- No usar secadora \r\n- No planchar \r\n- Secado en tendedero a la sombra\r\n- No retorcer"
+   ],
+   "Categoría": ["Camisetas"],
+   "Género": ["Hombre"],
+   "items": [
+      {
+         "images": [
+            {
+               "imageId": "177739",
+               "imageLabel": "",
+               "imageTag": "<img src=\"~/arquivos/ids/177739-#width#-#height#/238249-camiseta-hombre-one-piece-camiseta-iconica-1.jpg?v=638664382146500000\" width=\"#width#\" height=\"#height#\" alt=\"238249-camiseta-hombre-one-piece-camiseta-iconica-1\" id=\"\" />",
+               "imageUrl": "https://moviesshopco.vteximg.com.br/arquivos/ids/177739/238249-camiseta-hombre-one-piece-camiseta-iconica-1.jpg?v=638664382146500000",
+               "imageText": "238249-camiseta-hombre-one-piece-camiseta-iconica-1",
+               "imageLastModified": "2024-11-05T21:16:54.6500000Z"
+            },
+            {
+               "imageId": "177740",
+               "imageLabel": "",
+               "imageTag": "<img src=\"~/arquivos/ids/177740-#width#-#height#/238249-camiseta-hombre-one-piece-camiseta-iconica-2.jpg?v=638664382275230000\" width=\"#width#\" height=\"#height#\" alt=\"238249-camiseta-hombre-one-piece-camiseta-iconica-2\" id=\"\" />",
+               "imageUrl": "https://moviesshopco.vteximg.com.br/arquivos/ids/177740/238249-camiseta-hombre-one-piece-camiseta-iconica-2.jpg?v=638664382275230000",
+               "imageText": "238249-camiseta-hombre-one-piece-camiseta-iconica-2",
+               "imageLastModified": "2024-11-05T21:17:07.5230000Z"
+            },
+            {
+               "imageId": "177741",
+               "imageLabel": "",
+               "imageTag": "<img src=\"~/arquivos/ids/177741-#width#-#height#/238249-camiseta-hombre-one-piece-camiseta-iconica-3.jpg?v=638664382390130000\" width=\"#width#\" height=\"#height#\" alt=\"238249-camiseta-hombre-one-piece-camiseta-iconica-3\" id=\"\" />",
+               "imageUrl": "https://moviesshopco.vteximg.com.br/arquivos/ids/177741/238249-camiseta-hombre-one-piece-camiseta-iconica-3.jpg?v=638664382390130000",
+               "imageText": "238249-camiseta-hombre-one-piece-camiseta-iconica-3",
+               "imageLastModified": "2024-11-05T21:17:19.0130000Z"
+            },
+            {
+               "imageId": "177742",
+               "imageLabel": "",
+               "imageTag": "<img src=\"~/arquivos/ids/177742-#width#-#height#/238249-camiseta-hombre-one-piece-camiseta-iconica-4.jpg?v=638664382613130000\" width=\"#width#\" height=\"#height#\" alt=\"238249-camiseta-hombre-one-piece-camiseta-iconica-4\" id=\"\" />",
+               "imageUrl": "https://moviesshopco.vteximg.com.br/arquivos/ids/177742/238249-camiseta-hombre-one-piece-camiseta-iconica-4.jpg?v=638664382613130000",
+               "imageText": "238249-camiseta-hombre-one-piece-camiseta-iconica-4",
+               "imageLastModified": "2024-11-05T21:17:41.3130000Z"
+            }
+         ]
+      }
+   ],
+   "skuSpecifications": [
+      {
+         "values": [
+            {
+               "id": "56",
+               "name": "XS",
+               "position": 1,
+               "quantity": 1
+            },
+            {
+               "id": "57",
+               "name": "S",
+               "position": 2,
+               "quantity": 3
+            },
+            {
+               "id": "58",
+               "name": "M",
+               "position": 3,
+               "quantity": 0
+            },
+            {
+               "id": "59",
+               "name": "L",
+               "position": 4,
+               "quantity": 5
+            },
+            {
+               "id": "60",
+               "name": "XL",
+               "position": 5,
+               "quantity": 3
+            }
+         ]
+      }
+   ]
+}
+
+### UPDATE ONE Product
+# Updates an existing product by ID.
+PUT http://localhost:3000/api/product/67609d58c716dfbf7ecfb6c5 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
    "productId": "3089",
    "productName": "Camiseta de Snoopy manga corta azul para mujer",
+   "price": 84900,
    "brand": "SNOOPY",
    "linkText": "camiseta-mujer-exterior-snoopy-238095",
    "releaseDate": "2024-08-15T00:00:00Z",
@@ -80,81 +188,27 @@ Accept: application/json
             {
                "id": "56",
                "name": "XS",
-               "position": 1
+               "position": 1,
+               "quantity": 0
             },
             {
                "id": "57",
                "name": "S",
-               "position": 2
+               "position": 2,
+               "quantity": 2
             },
             {
                "id": "58",
                "name": "M",
-               "position": 3
+               "position": 3,
+               "quantity": 2
             },
             {
                "id": "59",
                "name": "L",
-               "position": 4
+               "position": 4,
+               "quantity": 0
             }
-         ]
-      }
-   ]
-}
-
-
-### UPDATE ONE Product
-# Updates an existing product by ID.
-PUT http://localhost:3000/api/product/675c2968b23e0e6a2cecdd22 HTTP/1.1
-Content-Type: application/json
-Accept: application/json
-
-{
-   "productId": "3150",
-   "productName": "Camiseta de One Piece manga corta marfil para hombre",
-   "brand": "ONE PIECE",
-   "linkText": "camiseta-hombre-exterior-one-piece-238249",
-   "releaseDate": "2024-11-15T00:00:00Z",
-   "categories": ["/Hombre/Camisetas/", "/Hombre/"],
-   "link": "https://moviesshopco.vtexcommercestable.com.br/camiseta-hombre-exterior-one-piece-238249/p",
-   "País de fabricación": [
-      "Colombia \r\n- FABRICANTE/IMPORTADOR: Maquila Internacional de confección"
-   ],
-   "RegistroSic": ["811007991-8"],
-   "Composición": [
-      "Componente: Camiseta , Composición: 99% Algodón, 1% Elastano"
-   ],
-   "Especificaciones": [
-      "- Camiseta cuello redondo, manga corta\r\n -tela algodón para mayor frescura y suavidad, cuello en rib para mayor comodidad -cuello con elongación para facilitar el paso de la cabeza\r\n- Regular fit\r\n- Estampado en relieve"
-   ],
-   "Color": ["Marfil"],
-   "Cuidado": [
-      "- Lavar a mano o en máquina \r\n- No lavar en seco \r\n- No dejar en remojo \r\n- No retorcer ni exprimir \r\n- Usar agua fría \r\n- Usar jabón suave \r\n- No usar blanqueador \r\n- No blanquear \r\n- No usar secadora \r\n- No planchar \r\n- Secado en tendedero a la sombra\r\n- No retorcer"
-   ],
-   "Categoría": ["Camisetas"],
-   "Género": ["Hombre"],
-   "items": [
-      {
-         "images": [
-            {
-               "imageId": "177739",
-               "imageLabel": "",
-               "imageTag": "<img src=\"~/arquivos/ids/177739-#width#-#height#/238249-camiseta-hombre-one-piece-camiseta-iconica-1.jpg?v=638664382146500000\" width=\"#width#\" height=\"#height#\" alt=\"238249-camiseta-hombre-one-piece-camiseta-iconica-1\" id=\"\" />",
-               "imageUrl": "https://moviesshopco.vteximg.com.br/arquivos/ids/177739/238249-camiseta-hombre-one-piece-camiseta-iconica-1.jpg?v=638664382146500000",
-               "imageText": "238249-camiseta-hombre-one-piece-camiseta-iconica-1",
-               "imageLastModified": "2024-11-05T21:16:54.6500000Z"
-            }
-         ]
-      }
-   ],
-   "skuSpecifications": [
-      {
-         "values": [
-            { "id": "56", "name": "XS", "position": 1 },
-            { "id": "57", "name": "S", "position": 2 },
-            { "id": "58", "name": "M", "position": 3 },
-            { "id": "59", "name": "L", "position": 4 },
-            { "id": "60", "name": "XL", "position": 5 }
          ]
       }
    ]
@@ -162,5 +216,5 @@ Accept: application/json
 
 ### DELETE ONE Product
 # Deletes a product by its ID.
-DELETE http://localhost:3000/api/product/675c2968b23e0e6a2cecdd22 HTTP/1.1
+DELETE http://localhost:3000/api/product/67609d58c716dfbf7ecfb6c5 HTTP/1.1
 Accept: application/json
