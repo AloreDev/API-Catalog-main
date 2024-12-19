@@ -1,10 +1,19 @@
-# Prueba para Desarrollador Fullstack Vélez 2024
+# Prueba para Analista de Desarrollo front-end
 
 ## Objetivo
-Desarrollar una página web utilizando: React.js + Node.js + TypeScript + GraphQL, y MongoDB.
+Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co)** de acuerdo a las siguientes requerimientos técnicos:
 
-### Base de Datos:
-- Crear una colección en MongoDB para almacenar los datos de una compra, incluyendo:
+| Requisitos | Observaciones |
+| ------ | ------ |
+| ReactJS | Puede usar frameworks como Next.js (opcional) |
+| CSS | Se valora el uso de SASS (opcional) |
+| Javascript | Se valora el uso de TypeScript (opcional) |
+| NodeJS | Puede usar frameworks como Express |
+| MongoDB | Para la consulta y manipulación de datos puede usar GraphQL (opcional) |
+
+
+## Base de Datos:
+- Crea una colección en MongoDB para almacenar los datos de la compra con los siguientes campos
     - ID del pedido
     - Fecha de compra
     - Documento del cliente
@@ -12,66 +21,122 @@ Desarrollar una página web utilizando: React.js + Node.js + TypeScript + GraphQ
     - Cantidad de productos
     - Precio total de la compra
 
-### Back-end:
-- Implementar un endpoint en Node.js que permita consumir consultas GraphQL.
-- Crear los esquemas necesarios para realizar consultas GraphQL sobre la colección de compras en MongoDB.
-- Usando los datos de la siguiente [API](https://qacuerosvelez.vtexcommercestable.com.br/api/catalog_system/pub/products/search/), diseñar el esquema adecuado para realizar consultas GraphQL sobre los productos y obtener la información necesaria.
 
-### Front-end:
+## Back-end:
+- Para la consulta de los productos de la tienda usar la siguiente [API](https://api-catalog-main-production.up.railway.app), desde aquí podra obtener los datos necesarios a través de los endpoints de [GET ONE](https://api-catalog-main-production.up.railway.app/api/product/67609d69c716dfbf7ecfb6d2) y [GET ALL](https://api-catalog-main-production.up.railway.app/api/product)
+- Implementar los endpoints en Node.js que permita consumir y almacenar las compras del carrito
+- Crear los esquemas necesarios para realizar las consultas sobre la colección de compras en MongoDB.
+
+    > Usar preferiblemente una versión estable de node.js superior a v16
+
+
+## Front-end:
 En este repositorio encontrarás un template básico de React.js + TypeScript con las versiones necesarias de las librerías para funcionar correctamente. Este incluye la librería [VTEX STYLE GUIDE](https://styleguide.vtex.com/), que proporciona componentes predefinidos, y el framework [CSS Tachyons](https://tachyons.io/#style), que ofrece clases reutilizables para estilos. A continuación, se detallan las tareas a realizar:
 
-1. Crear un dashboard en la URL "/admin" donde se puedan visualizar los pedidos realizados, mostrando en una tabla los siguientes datos:
-     - ID del pedido
-     - Fecha de compra
-     - Documento del cliente
-     - Cantidad de productos
-     - Precio total de la compra
+1. **Crear un dashboard en la URL "/admin" donde se puedan visualizar los pedidos realizados, mostrando en una tabla los siguientes datos:**
 
-    Ejemplo de cómo se visualizaría la tabla:
-    ![VTEX TABLE](https://qacuerosvelez.vtexassets.com/assets/vtex.file-manager-graphql/images/e533d854-e264-4528-84b1-fb5b0686d03c___2a59e76c4e43dc24e92c01a9a0881351.png)
+    - ID del pedido
+    - Fecha de compra
+    - Documento del cliente
+    - Cantidad de productos
+    - Precio total de la compra
 
-2. Crear una página de inicio (Home Page) según el siguiente Mockup:
+    *Ejemplo de cómo se visualizaría la tabla:*
 
-    - **Versión Desktop**  
-    ![Desktop](https://qacuerosvelez.vtexassets.com/assets/vtex.file-manager-graphql/images/936480a6-74c7-4a77-8cb3-d5dae8d346fb___255447a52203bc4e30cc4e362f74cfd9.jpg)
-    
-    - **Versión Mobile**  
-    ![Mobile](https://qacuerosvelez.vtexassets.com/assets/vtex.file-manager-graphql/images/71cd6c66-376e-4ba1-8c3a-a3c72226a6cd___fca530bbc25b241786e15412b89d76bb.jpg)
+    | ``Ticket promedio`` | ``Total pedidos`` | ``Total productos`` | ``Balance total`` |
+    | ------ | ------ | ------ | ------ |
+    | $103.400 | 2 | 4 | $420.900 |
 
-    **Descripción de las tareas:**
-    - Crear un navbar fijo que permanezca visible al hacer scroll. Este debe incluir:
-        - Botones "MUJER" y "HOMBRE" a la izquierda.
-        - Logo de VÉLEZ en el centro [URL LOGO](https://cuerosvelezco.vtexassets.com/assets/vtex/assets-builder/cuerosvelezco.storetheme/1.0.17/svgs/logo-velez___809b118a59d617f3ad6fbebb950fdb8f.svg).
-        - A la derecha, un botón con el icono de una bolsa de compras [URL BOLSA](https://cuerosvelezco.vtexassets.com/arquivos/miniCart2.svg) con funcionalidad, y un botón con el icono de login [URL LOGIN](https://cuerosvelezco.vtexassets.com/arquivos/account02.svg).
-        - Al hacer clic en la bolsa, se debe abrir un modal que muestre los productos agregados al carrito, con la opción de eliminar productos. Al hacer clic en "Finalizar", se solicitará el documento del cliente y se guardarán los datos en MongoDB.
-        ![MOKUP BOLSA](https://qacuerosvelez.vtexassets.com/assets/vtex.file-manager-graphql/images/22c57923-5479-4649-a0bc-f53656c5a125___d434dc79ae21314599e7e33570588e83.png)
-    - En la primera sección del mockup, agregar un botón como se indica en la imagen [URL VIDEO DESKTOP](https://cuerosvelezco.vtexcommercestable.com.br/api/dataentities/AA/documents/876/video/attachments/cap1_ban_desktp.mp4) [URL VIDEO MOBILE](https://cuerosvelezco.vtexcommercestable.com.br/api/dataentities/AA/documents/877/video/attachments/cap1_ban_mbile.mp4).
-    - Los botones "MUJER" y "HOMBRE" deben cambiar la imagen al hacer clic: [URL IMAGEN MUJER](https://cuerosvelezco.vtexassets.com/assets/vtex.file-manager-graphql/images/c8c9872d-c9ac-4156-8410-01c780c569c5___607cd69d7a9fb84838e4923578621b85.jpg) y [URL IMAGEN HOMBRE](https://cuerosvelezco.vtexassets.com/assets/vtex.file-manager-graphql/images/13c6de0e-6d36-4bbb-9c75-82457ce8df70___000e8dd8c03ebbbf633733626b307dce.jpg).
-    - Obtener los productos mediante una consulta GraphQL y mostrarlos con su imagen. Al hacer hover, se debe mostrar un recuadro con el nombre del producto, precio y botón para agregar al carrito. Al hacer clic en el botón del carrito, se debe guardar el estado del producto en local para persistir los datos.
-    - En la tercera imagen del mockup, agregar un botón como se indica [URL IMAGEN](https://cuerosvelezco.vtexassets.com/assets/vtex.file-manager-graphql/images/0d4ff15f-3e84-4962-a45b-8b5580ae7770___1af093372608055184268a51e91ab168.jpg).
-    - Implementar el footer como se muestra en el mockup, con íconos de redes sociales y otros elementos:
-        - [ICON INSTAGRAM](https://cuerosvelezco.vtexassets.com/assets/vtex/assets-builder/cuerosvelezco.storetheme/1.0.17/svgs/home/outline-instagram___617fd1332ff0715da96f9446696122f7.svg)
-        - [ICON FACEBOOK](https://cuerosvelezco.vtexassets.com/assets/vtex/assets-builder/cuerosvelezco.storetheme/1.0.17/svgs/home/outline-facebook___6e1615d55aac55794435fe8d695c0a7e.svg)
-        - [ICON TIKTOK](https://cuerosvelezco.vtexassets.com/assets/vtex/assets-builder/cuerosvelezco.storetheme/1.0.17/svgs/home/outline-tiktok___572da0db9892477e37214a7a21ae0490.svg)
-        - [ICON YOUTUBE](https://cuerosvelezco.vtexassets.com/assets/vtex/assets-builder/cuerosvelezco.storetheme/1.0.17/svgs/home/outline-youtube___263827c4c87b0364f40c7d6f68fefab5.svg)
-        - [ICON LINKEDIN](https://cuerosvelezco.vtexassets.com/assets/vtex/assets-builder/cuerosvelezco.storetheme/1.0.17/svgs/home/outline-linkedin___420948e38707c9909ee65de29cdbca49.svg)
-        - [ICON PINTEREST](https://cuerosvelezco.vtexassets.com/assets/vtex/assets-builder/cuerosvelezco.storetheme/1.0.17/svgs/home/outline-pinterest___fcd9ac31e61143fec4a187d0bdc23098.svg)
-        - [ICON INDUSTRIA Y COMERCIO](https://cuerosvelezco.vtexassets.com/arquivos/logo-sic.png)
+    | ID | Fecha de compra | Documento | Cantidad de productos | Precio total |
+    | ------ | ------ | ------ | ------ | ------ |
+    | 1484911420437 | 2024-12-22 15:12 | 123456789 | 1 | ``$185.900`` |
+    | 1484911420435 | 2024-18-22 19:54 | 987654321 | 3 | ``$235.000`` |
 
-      **Nota:** Utilizar preferiblemente la versión de node v16.20.2.
+2. **Crear una página de inicio Home Movies con estas características:**
 
-### Publicación:
-- **Back-end:** Publicar en [Render (Opcional)](https://render.com/).
-- **Front-end:** Publicar en [GitHub Pages (Opcional)](https://pages.github.com/).
+    - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe incluir:
+        - fsg
+        - Minicarrito funcional
+    - Vitrinas de producto
+        - Traer los productos de la vitrina a través de la [API](https://api-catalog-main-production.up.railway.app)
 
-**Nota:** Es necesario compartir el repositorio.
+**Versión Desktop**
 
-### Recomendaciones:
-1. Evitar el "copy-paste" de código externo, se valorará la originalidad.
-2. Desarrollos adicionales y módulos personalizados son bienvenidos.
-3. Incorporar transiciones, efectos y mejores prácticas en HTML.
+
+**Versión Mobile**
+
+
+## Recursos:
+Estos son los **recursos gráficos** para el  home del sitio:
+
+- [BANNERS](/assets/banners/)
+    - [BANNERS](/assets/banners)
+- [BRAND](/assets/brand/)
+    - [logo](/assets/brand/brand.svg)
+    - [logo-mobile](/assets/brand/brand-2.svg)
+- [CONTACT](/assets/contact/)
+    - [icon-call](/assets/contact/icon-call.svg)
+    - [icon-chat](/assets/contact/icon-chat.svg)
+    - [icon-email](/assets/contact/icon-email.svg)
+    - [icon-email-white](/assets/contact/icon-email-white.svg)
+    - [icon-locator-footer](/assets/contact/icon-locator-footer.svg)
+- [FOOTER](/assets/footer/)
+    - [icon-sic](/assets/footer/icon-sic.svg)
+    - [icon-web](/assets/footer/icon-web.svg)
+- [NAV](/assets/nav/)
+    - [icon-arrow-left](/assets/nav/arrow-left.svg)
+    - [icon-arrow-right](/assets/nav/arrow-right.svg)
+    - [icon-back](/assets/nav/back.svg)
+    - [icon-close](/assets/nav/close.svg)
+    - [icon-favorite](/assets/nav/favorite.svg)
+    - [icon-hamburger](/assets/nav/hamburguer.svg)
+    - [icon-pin](/assets/nav/pin.svg)
+    - [icon-search](/assets/nav/search.svg)
+    - [icon-shopping-bag](/assets/nav/shopping-bag.svg)
+    - [icon-user](/assets/nav/user.svg)
+- [PAYMENT](/assets/payment/)
+    - [icon-amex](/assets/payment/medios_de_pago_amex.svg)
+    - [icon-bancolombia](/assets/payment/medios_de_pago_bancolombia.svg)
+    - [icon-codensa](/assets/payment/medios_de_pago_codensa.svg)
+    - [icon-contraentrega](/assets/payment/medios_de_pago_contraentrega.svg)
+    - [icon-credifin](/assets/payment/medios_de_pago_credifin.svg)
+    - [icon-credito](/assets/payment/medios_de_pago_credito.svg)
+    - [icon-debito](/assets/payment/medios_de_pago_debito.svg)
+    - [icon-diners](/assets/payment/medios_de_pago_diners.svg)
+    - [icon-efecty](/assets/payment/medios_de_pago_efecty.svg)
+    - [icon-mastercard](/assets/payment/medios_de_pago_master_card.svg)
+    - [icon-pse](/assets/payment/medios_de_pago_pse.svg)
+    - [icon-visa](/assets/payment/medios_de_pago_visa.svg)
+- [PRODUCT](/assets/product/)
+    - [icon-wishlist](/assets/product/wishlist.svg)
+- [PROMISE](/assets/promise/)
+    - [icon-bag](/assets/promise/bag.svg)
+    - [icon-locator](/assets/promise/locator.svg)
+    - [icon-service](/assets/promise/service.svg)
+    - [icon-shipping](/assets/promise/shipping.svg)
+- [SOCIAL](/assets/social/)
+    - [icon-facebook](/assets/social/icon-facebook.svg)
+    - [icon-instagram](/assets/social/icon-instagram.svg)
+    - [icon-tiktok](/assets/social/icon-tiktok.svg)
+    - [icon-youtube](/assets/social/icon-youtube.svg)
+
+
+## Publicación:
+- **Back-end (server):** Publicar en [Railway (Opcional)](https://railway.app/).
+- **Front-end (client):** Publicar en [GitHub Pages (Opcional)](https://pages.github.com/).
+
+**Nota:** Es obligatorio compartir el repositorio.
+
+
+## Recomendaciones:
+
+1. Evita ``copiar y pegar`` código externo ya que este será evaluado posteriormente.
+2. Todos los desarrollos adicionales a los requeridos inicialmente son bienvenidos.
+3. Aplica o incorpora código con buenas prácticas como arquitecturas / paradigmas de desarrollo
 4. Considerar integraciones con desarrollos externos (Apps externas).
-5. Utilizar medidas responsive para la pagina de inicio.
-6. Saber manejar los errores adecuadamente
+5. El sitio debe ser ``Responsive`` y adaptarse correctamente a los diferentes dispositivos
+6. Saber manejar los errores adecuadamente y evita realizar publicaciones con estos
 
-**Tiempo de Desarrollo:** 5 horas.
+> **Tiempo de desarrollo y entrega:** 1 día.
+
+[dill]: </API-Catalog-main/tree/main/assets/>
