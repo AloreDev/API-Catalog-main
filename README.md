@@ -1,7 +1,7 @@
 # Prueba para Analista de Desarrollo front-end
 
 ## Objetivo
-Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co)** de acuerdo a las siguientes requerimientos técnicos:
+Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co)** de acuerdo a los siguientes requerimientos técnicos:
 
 | Requisitos | Observaciones |
 | ------ | ------ |
@@ -33,7 +33,7 @@ Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co
 ## Front-end:
 En este repositorio encontrarás todos los recursos necesarios para el desarrollo del front end, incluyendo los recursos gráficos como banners, iconos, referencias, entre otros.
 
-A continuación, se detallan las tareas a realizar:
+*A continuación, se detallan las tareas a realizar:*
 
 1. **Crear un dashboard en la URL "/admin" donde se puedan visualizar los pedidos realizados, mostrando en una tabla los siguientes datos:**
 
@@ -62,7 +62,7 @@ A continuación, se detallan las tareas a realizar:
     | 148491189 | 2 | $140.000 |
     | 148495655 | 1 | $95.000 |
 
-2. **Crear una página de inicio "/" Home Movies con estas características:**
+2. **Crear una página de inicio "/" Home de Movies con estas características:**
 
     - Topbar principal anclado con el menú [Grinch desktop](/assets/banners/topbar-grinch-desktop.webp) y [Grinch mobile](/assets/banners/topbar-grinch-mobile.gif)
     - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe permanecer fijo cuando se hace scroll, incluir:
@@ -179,6 +179,6 @@ Estos son los **recursos gráficos** para el  home del sitio:
 5. El sitio debe ser ``Responsive`` y adaptarse correctamente a los diferentes dispositivos
 6. Saber manejar los errores adecuadamente y evita realizar publicaciones con estos
 
-> **Tiempo de desarrollo y entrega:** 1 día.
+> **Tiempo de desarrollo y entrega:** 2 días.
 
-[dill]: </API-Catalog-main/tree/main/assets/>
+[dill]: </assets/>
