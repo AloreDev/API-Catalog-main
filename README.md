@@ -13,7 +13,7 @@ Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co
 
 
 ## Base de Datos:
-- Crea una colección en MongoDB para almacenar los datos de la compra con los siguientes campos
+- Crea una colección en MongoDB para **almacenar los datos de la compra** con los siguientes campos
     - ID del pedido
     - Fecha de compra
     - Documento del cliente
@@ -38,39 +38,65 @@ En este repositorio encontrarás un template básico de React.js + TypeScript co
     - ID del pedido
     - Fecha de compra
     - Documento del cliente
+    - IDs de los productos
     - Cantidad de productos
     - Precio total de la compra
 
-    *Ejemplo de cómo se visualizaría la tabla:*
+    *Ejemplo de cómo se visualizaría la tabla principal:*
 
     | ``Ticket promedio`` | ``Total pedidos`` | ``Total productos`` | ``Balance total`` |
     | ------ | ------ | ------ | ------ |
     | $103.400 | 2 | 4 | $420.900 |
 
-    | ID | Fecha de compra | Documento | Cantidad de productos | Precio total |
-    | ------ | ------ | ------ | ------ | ------ |
-    | 1484911420437 | 2024-12-22 15:12 | 123456789 | 1 | ``$185.900`` |
-    | 1484911420435 | 2024-18-22 19:54 | 987654321 | 3 | ``$235.000`` |
+    | ID pedido | Fecha de compra | Documento | Cantidad de productos | Precio total | Detalle |
+    | ------ | ------ | ------ | ------ | ------ | ------ |
+    | 1484911420437 | 2024-12-22 15:12 | 123456789 | 1 | ``$185.900`` | ``Ver mas`` |
+    | 1484911420435 | 2024-18-22 19:54 | 987654321 | 3 | ``$235.000`` | ``Ver mas`` |
+
+    *Tabla de detalle del pedido:*
+
+    | ``ID producto`` | ``Cantidad`` | ``Precio`` |
+    | ------ | ------ | ------ |
+    | 148491189 | 2 | $140.000 |
+    | 148495655 | 1 | $95.000 |
 
 2. **Crear una página de inicio Home Movies con estas características:**
 
-    - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe incluir:
-        - fsg
-        - Minicarrito funcional
+    - Topbar principal anclado con el menú [Grinch desktop](/assets/banners/topbar-grinch-desktop.webp) y [Grinch mobile](/assets/banners/topbar-grinch-mobile.gif)
+    - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe permanecer fijo cuando se hace scroll, incluir:
+        - Logo de la marca
+        - Categorías Mujer, Hombre, Nuevo, Ofertas y Personajes
+        - Botones del menú buscar, localizador, wishlist, login, minicart
+        - Minicarrito con badget de cantidad al agregar el producto
+    - Minicarrito completamente funcional, este debe mostrar el detalle de producto con cantidad, precio del producto, eliminar producto del carrito y total del carrito
+    - Banner principal slider (Incluir los 3 banners) [Banners principales](/assets/banners/)
+    - Topbar secundario [share story desktop](/assets/banners/topbar-sharestory-desktop.webp) y [Share story mobile](/assets/banners/topbar-sharestory-mobile.gif)
     - Vitrinas de producto
         - Traer los productos de la vitrina a través de la [API](https://api-catalog-main-production.up.railway.app)
+    - Footer del home
 
-**Versión Desktop**
+    **Versión Desktop**
+    ![Home Desktop](/assets/references/mockup-desktop.png)
 
-
-**Versión Mobile**
-
+    **Versión Mobile**
+    ![Home mobile](/assets/references/mockup-mobile.png)
 
 ## Recursos:
 Estos son los **recursos gráficos** para el  home del sitio:
 
 - [BANNERS](/assets/banners/)
-    - [BANNERS](/assets/banners)
+    - [banner-ppal-chillout-desktop](/assets/banners/banner-ppal-chillout-desktop.webp)
+    - [banner-ppal-chillout-mobile](/assets/banners/banner-ppal-chillout-mobile.webp)
+    - [banner-ppal-grinch-desktop](/assets/banners/banner-ppal-grinch-desktop.webp)
+    - [banner-ppal-grinch-mobile](/assets/banners/banner-ppal-grinch-mobile.webp)
+    - [banner-ppal-harry-desktop](/assets/banners/banner-ppal-harry-desktop.webp)
+    - [banner-ppal-harry-mobile](/assets/banners/banner-ppal-harry-mobile.webp)
+    - [banner-ppal-sharestory-desktop](/assets/banners/banner-ppal-sharestory-desktop.webp)
+    - [banner-ppal-sharestory-mobile](/assets/banners/banner-ppal-sharestory-mobile.webp)
+    - [topbar-grinch-desktop](/assets/banners/topbar-grinch-desktop.webp)
+    - [topbar-grinch-mobile](/assets/banners/topbar-grinch-mobile.gif)
+    - [topbar-sharestory-desktop](/assets/banners/topbar-sharestory-desktop.webp)
+    - [topbar-sharestory-mobile](/assets/banners/topbar-sharestory-mobile.gif)
 - [BRAND](/assets/brand/)
     - [logo](/assets/brand/brand.svg)
     - [logo-mobile](/assets/brand/brand-2.svg)
@@ -119,6 +145,20 @@ Estos son los **recursos gráficos** para el  home del sitio:
     - [icon-instagram](/assets/social/icon-instagram.svg)
     - [icon-tiktok](/assets/social/icon-tiktok.svg)
     - [icon-youtube](/assets/social/icon-youtube.svg)
+
+**Imágenes de referencia** para la construcción del Home
+
+- [REFERENCE](/assets/references/)
+    - [ref-mockup-desktop](/assets/references/mockup-desktop.png)
+    - [ref-mockup-mobile](/assets/references/mockup-mobile.png)
+    - [ref-add-to-bag-desktop](/assets/references/add-to-bag-desktop.png)
+    - [ref-add-to-bag-mobile](/assets/references/add-to-bag-mobile.png)
+    - [ref-minicart](/assets/references/minicart.png)
+    - [ref-navbar-desktop](/assets/references/navbar-desktop.png)
+    - [ref-navbar-mobile-ppal](/assets/references/navbar-mobile-ppal.png)
+    - [ref-navbar-mobile-submenu](/assets/references/navbar-mobile-submenu.png)
+    - [ref-slider-product-desktop](/assets/references/slider-products-desktop.png)
+    - [ref-slider-product-mobile](/assets/references/slider-products-mobile.png)
 
 
 ## Publicación:
