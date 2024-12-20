@@ -31,7 +31,9 @@ Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co
 
 
 ## Front-end:
-En este repositorio encontrarás un template básico de React.js + TypeScript con las versiones necesarias de las librerías para funcionar correctamente. Este incluye la librería [VTEX STYLE GUIDE](https://styleguide.vtex.com/), que proporciona componentes predefinidos, y el framework [CSS Tachyons](https://tachyons.io/#style), que ofrece clases reutilizables para estilos. A continuación, se detallan las tareas a realizar:
+En este repositorio encontrarás todos los recursos necesarios para el desarrollo del front end, incluyendo los recursos gráficos como banners, iconos, referencias, entre otros.
+
+A continuación, se detallan las tareas a realizar:
 
 1. **Crear un dashboard en la URL "/admin" donde se puedan visualizar los pedidos realizados, mostrando en una tabla los siguientes datos:**
 
@@ -60,7 +62,7 @@ En este repositorio encontrarás un template básico de React.js + TypeScript co
     | 148491189 | 2 | $140.000 |
     | 148495655 | 1 | $95.000 |
 
-2. **Crear una página de inicio Home Movies con estas características:**
+2. **Crear una página de inicio "/" Home Movies con estas características:**
 
     - Topbar principal anclado con el menú [Grinch desktop](/assets/banners/topbar-grinch-desktop.webp) y [Grinch mobile](/assets/banners/topbar-grinch-mobile.gif)
     - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe permanecer fijo cuando se hace scroll, incluir:
