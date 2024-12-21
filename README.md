@@ -60,7 +60,7 @@ En este repositorio encontrarás todos los recursos necesarios para el desarroll
     | 148491189 | 2 | $140.000 |
     | 148495655 | 1 | $95.000 |
 
-2. **Crear una página de inicio "/" Home de Movies con estas características:**
+2. **Crear una página de inicio de Movies con estas características:**
 
     - Topbar principal anclado con el menú [REFERENCE_DESKTOP](/assets/banners/topbar-grinch-desktop.webp) & [REFERENCE_MOBILE](/assets/banners/topbar-grinch-mobile.gif)
     - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe permanecer fijo cuando se hace scroll [REFERENCE_DESKTOP](/assets/references/navbar-desktop.png) & [REFERENCE_MOBILE_1](/assets/references/navbar-mobile-ppal.png) & [REFERENCE_MOBILE_2](/assets/references/navbar-mobile-submenu.png)
@@ -69,7 +69,7 @@ En este repositorio encontrarás todos los recursos necesarios para el desarroll
         - Botones del menú buscar, localizador, wishlist, login, minicart
     - Minicarrito completamente funcional, este debe mostrar el detalle de producto con cantidad, precio del producto, eliminar producto del carrito y total del carrito. [REFERENCE](/assets/references/minicart.png)
         - Minicarrito con el badget de cantidad y pop up de "Se agregó al carrito "cuando se agrega producto [REFERENCE_DESKTOP](/assets/references/add-to-bag-desktop.png) & [REFERENCE_MOBILE](/assets/references/add-to-bag-mobile.png)
-    - Banner principal slider (Incluir los 3 banners y botones del slider) [REFERENCE_DESKTOP](/assets/references/slider-products-desktop.png) & [REFERENCE_MOBILE](/assets/references/slider-products-mobile.png)
+    - Banner principal slider (Incluir los 3 banners y botones del slider) [REFERENCE_DESKTOP](/assets/references/banner-slider-desktop.png) & [REFERENCE_MOBILE](/assets/references/banner-slider-mobile.png)
     - Topbar secundario (este no va anclado y sigue el flujo del scroll) [REFERENCE_DESKTOP](/assets/banners/topbar-sharestory-desktop.webp) & [REFERENCE_MOBILE](/assets/banners/topbar-sharestory-mobile.gif)
     - Vitrinas de producto slider [REFERENCE_DESKTOP](/assets/references/slider-products-desktop.png) & [REFERENCE_MOBILE](/assets/references/slider-products-mobile.png)
         - Traer los productos de la vitrina a través de la [API](https://api-catalog-main-production.up.railway.app)
