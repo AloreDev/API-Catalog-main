@@ -12,7 +12,7 @@ Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co
 | MongoDB | Para la consulta y manipulación de datos puede usar GraphQL (opcional) |
 
 
-## Base de Datos:
+### Base de Datos:
 - Crea una colección en MongoDB para **almacenar los datos de la compra** con los siguientes campos
     - ID del pedido
     - Fecha de compra
@@ -22,15 +22,13 @@ Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co
     - Precio total de la compra
 
 
-## Back-end:
+### Back-end:
 - Para la consulta de los productos de la tienda usar la siguiente [API](https://api-catalog-main-production.up.railway.app), desde aquí podra obtener los datos necesarios a través de los endpoints de [GET ONE](https://api-catalog-main-production.up.railway.app/api/product/67609d69c716dfbf7ecfb6d2) y [GET ALL](https://api-catalog-main-production.up.railway.app/api/product)
 - Implementar los endpoints en Node.js que permita consumir y almacenar las compras del carrito
 - Crear los esquemas necesarios para realizar las consultas sobre la colección de compras en MongoDB.
 
-    > Usar preferiblemente una versión estable de node.js superior a v16
 
-
-## Front-end:
+### Front-end:
 En este repositorio encontrarás todos los recursos necesarios para el desarrollo del front end, incluyendo los recursos gráficos como banners, iconos, referencias, entre otros.
 
 *A continuación, se detallan las tareas a realizar:*
@@ -64,26 +62,54 @@ En este repositorio encontrarás todos los recursos necesarios para el desarroll
 
 2. **Crear una página de inicio "/" Home de Movies con estas características:**
 
-    - Topbar principal anclado con el menú [Grinch desktop](/assets/banners/topbar-grinch-desktop.webp) y [Grinch mobile](/assets/banners/topbar-grinch-mobile.gif)
-    - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe permanecer fijo cuando se hace scroll, incluir:
-        - Logo de la marca
+    - Topbar principal anclado con el menú [REFERENCE_DESKTOP](/assets/banners/topbar-grinch-desktop.webp) & [REFERENCE_MOBILE](/assets/banners/topbar-grinch-mobile.gif)
+    - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe permanecer fijo cuando se hace scroll [REFERENCE_DESKTOP](/assets/references/navbar-desktop.png) & [REFERENCE_MOBILE_1](/assets/references/navbar-mobile-ppal.png) & [REFERENCE_MOBILE_2](/assets/references/navbar-mobile-submenu.png)
+        - Logo de la marca según el dispositivo
         - Categorías Mujer, Hombre, Nuevo, Ofertas y Personajes
         - Botones del menú buscar, localizador, wishlist, login, minicart
-        - Minicarrito con badget de cantidad al agregar el producto
-    - Minicarrito completamente funcional, este debe mostrar el detalle de producto con cantidad, precio del producto, eliminar producto del carrito y total del carrito
-    - Banner principal slider (Incluir los 3 banners) [Banners principales](/assets/banners/)
-    - Topbar secundario [share story desktop](/assets/banners/topbar-sharestory-desktop.webp) y [Share story mobile](/assets/banners/topbar-sharestory-mobile.gif)
-    - Vitrinas de producto
+    - Minicarrito completamente funcional, este debe mostrar el detalle de producto con cantidad, precio del producto, eliminar producto del carrito y total del carrito. [REFERENCE](/assets/references/minicart.png)
+        - Minicarrito con el badget de cantidad y pop up de "Se agregó al carrito "cuando se agrega producto [REFERENCE_DESKTOP](/assets/references/add-to-bag-desktop.png) & [REFERENCE_MOBILE](/assets/references/add-to-bag-mobile.png)
+    - Banner principal slider (Incluir los 3 banners y botones del slider) [REFERENCE_DESKTOP](/assets/references/slider-products-desktop.png) & [REFERENCE_MOBILE](/assets/references/slider-products-mobile.png)
+    - Topbar secundario (este no va anclado y sigue el flujo del scroll) [REFERENCE_DESKTOP](/assets/banners/topbar-sharestory-desktop.webp) & [REFERENCE_MOBILE](/assets/banners/topbar-sharestory-mobile.gif)
+    - Vitrinas de producto slider [REFERENCE_DESKTOP](/assets/references/slider-products-desktop.png) & [REFERENCE_MOBILE](/assets/references/slider-products-mobile.png)
         - Traer los productos de la vitrina a través de la [API](https://api-catalog-main-production.up.railway.app)
-    - Footer del home
+        - Vitrina de productos responsivo y funcional
+        - La elección de talla y agregar al carrito funcional
+        - Para el summary product la elección de talla y botón de agregar al carrito se muestra unicamente en desktop cuando el puntero se posiciona encima del producto [REFERENCE_STATIC](/assets/references/summary-product.png) & [REFERENCE_HOVER](/assets/references/summary-product-hover.png)
+    - Finalmente el Footer responsivo con sus respectivos iconos
+
+        > Usar preferiblemente una versión estable de node.js superior a v16
+
 
     **Versión Desktop**
+
     ![Home Desktop](/assets/references/mockup-desktop.png)
 
     **Versión Mobile**
+
     ![Home mobile](/assets/references/mockup-mobile.png)
 
-## Recursos:
+
+### Publicación:
+- **Back-end (server):** Publicar en [Railway (Opcional)](https://railway.app/).
+- **Front-end (client):** Publicar en [GitHub Pages (Opcional)](https://pages.github.com/).
+
+> **Nota:** Es obligatorio compartir el repositorio.
+
+
+### Recomendaciones:
+
+1. Evita ``copiar y pegar`` código externo ya que este será evaluado posteriormente.
+2. Todos los desarrollos adicionales a los requeridos inicialmente son bienvenidos.
+3. Aplica o incorpora código con buenas prácticas como arquitecturas / paradigmas de desarrollo
+4. Considerar integraciones con desarrollos externos (Apps externas).
+5. El sitio debe ser ``Responsive`` y adaptarse correctamente a los diferentes dispositivos
+6. Saber manejar los errores adecuadamente y evita realizar publicaciones con estos
+
+> **Tiempo de desarrollo y entrega:** 2 días.
+
+
+### Recursos:
 Estos son los **recursos gráficos** para el  home del sitio:
 
 - [BANNERS](/assets/banners/)
@@ -122,6 +148,7 @@ Estos son los **recursos gráficos** para el  home del sitio:
     - [icon-search](/assets/nav/search.svg)
     - [icon-shopping-bag](/assets/nav/shopping-bag.svg)
     - [icon-user](/assets/nav/user.svg)
+    - [icon-bin](/assets/nav/bin.svg)
 - [PAYMENT](/assets/payment/)
     - [icon-amex](/assets/payment/medios_de_pago_amex.svg)
     - [icon-bancolombia](/assets/payment/medios_de_pago_bancolombia.svg)
@@ -161,24 +188,8 @@ Estos son los **recursos gráficos** para el  home del sitio:
     - [ref-navbar-mobile-submenu](/assets/references/navbar-mobile-submenu.png)
     - [ref-slider-product-desktop](/assets/references/slider-products-desktop.png)
     - [ref-slider-product-mobile](/assets/references/slider-products-mobile.png)
+    - [ref-summary-product](/assets/references/summary-product.png)
+    - [ref-summary-product-hover](/assets/references/summary-product-hover.png)
 
-
-## Publicación:
-- **Back-end (server):** Publicar en [Railway (Opcional)](https://railway.app/).
-- **Front-end (client):** Publicar en [GitHub Pages (Opcional)](https://pages.github.com/).
-
-**Nota:** Es obligatorio compartir el repositorio.
-
-
-## Recomendaciones:
-
-1. Evita ``copiar y pegar`` código externo ya que este será evaluado posteriormente.
-2. Todos los desarrollos adicionales a los requeridos inicialmente son bienvenidos.
-3. Aplica o incorpora código con buenas prácticas como arquitecturas / paradigmas de desarrollo
-4. Considerar integraciones con desarrollos externos (Apps externas).
-5. El sitio debe ser ``Responsive`` y adaptarse correctamente a los diferentes dispositivos
-6. Saber manejar los errores adecuadamente y evita realizar publicaciones con estos
-
-> **Tiempo de desarrollo y entrega:** 2 días.
 
 [dill]: </assets/>
