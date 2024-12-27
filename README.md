@@ -1,9 +1,11 @@
 # Prueba para Analista de Desarrollo front-end
 
 ## Objetivo
-Desarrolla o replica la página Home **[moviesshop.co](https://www.moviesshop.co)** de acuerdo a los siguientes requerimientos técnicos:
+Desarrolla la página home **[moviesshop.co](https://www.moviesshop.co)** de acuerdo a los requerimientos técnicos dados en este documento.
 
-| Requisitos | Observaciones |
+*Habilidades requeridas para el desarrollo*
+
+| Conocimientos | Observaciones |
 | ------ | ------ |
 | ReactJS | Puede usar frameworks como Next.js (opcional) |
 | CSS | Se valora el uso de SASS (opcional) |
@@ -44,23 +46,23 @@ En este repositorio encontrarás todos los recursos necesarios para el desarroll
 
     *Ejemplo de cómo se visualizaría la tabla principal:*
 
-    | ``Ticket promedio`` | ``Total pedidos`` | ``Total productos`` | ``Balance total`` |
-    | ------ | ------ | ------ | ------ |
-    | $103.400 | 2 | 4 | $420.900 |
-
-    | ID pedido | Fecha de compra | Documento | Cantidad de productos | Precio total | Detalle |
+    | ID pedido | Fecha de compra | Documento | IDs productos | Cantidad de productos | Precio total |
     | ------ | ------ | ------ | ------ | ------ | ------ |
-    | 1484911420437 | 2024-12-22 15:12 | 123456789 | 1 | ``$185.900`` | ``Ver mas`` |
-    | 1484911420435 | 2024-18-22 19:54 | 987654321 | 3 | ``$235.000`` | ``Ver mas`` |
+    | 1484911420437 | 2024-12-22 15:12 | 123456789 | 67609d69c716dfbf7ecfb6dc | 1 | ``$185.900`` |
+    | 1484911420435 | 2024-18-22 19:54 | 987654321 | 67609d69c716dfbf7ecfb6d9 67609d69c716dfbf7ecfb6d2 | 3 | ``$235.000`` |
 
-    *Tabla de detalle del pedido:*
 
-    | ``ID producto`` | ``Cantidad`` | ``Precio`` |
-    | ------ | ------ | ------ |
-    | 148491189 | 2 | $140.000 |
-    | 148495655 | 1 | $95.000 |
+2. **Crear una página de inicio de Movies en base a los siguientes mockups:**
 
-2. **Crear una página de inicio de Movies con estas características:**
+    *Versión Desktop*
+
+    ![Home Desktop](/assets/references/mockup-desktop.png)
+
+    *Versión Mobile*
+
+    ![Home mobile](/assets/references/mockup-mobile.png)
+
+    **Requisitos**
 
     - Topbar principal anclado con el menú [REFERENCE_DESKTOP](/assets/banners/topbar-grinch-desktop.webp) & [REFERENCE_MOBILE](/assets/banners/topbar-grinch-mobile.gif)
     - Menú de navegación anclado con categorías y subcategorías para Hombre y mujer, debe permanecer fijo cuando se hace scroll [REFERENCE_DESKTOP](/assets/references/navbar-desktop.png) & [REFERENCE_MOBILE_1](/assets/references/navbar-mobile-ppal.png) & [REFERENCE_MOBILE_2](/assets/references/navbar-mobile-submenu.png)
@@ -72,29 +74,19 @@ En este repositorio encontrarás todos los recursos necesarios para el desarroll
     - Banner principal slider (Incluir los 3 banners y botones del slider) [REFERENCE_DESKTOP](/assets/references/banner-slider-desktop.png) & [REFERENCE_MOBILE](/assets/references/banner-slider-mobile.png)
     - Topbar secundario (este no va anclado y sigue el flujo del scroll) [REFERENCE_DESKTOP](/assets/banners/topbar-sharestory-desktop.webp) & [REFERENCE_MOBILE](/assets/banners/topbar-sharestory-mobile.gif)
     - Vitrinas de producto slider [REFERENCE_DESKTOP](/assets/references/slider-products-desktop.png) & [REFERENCE_MOBILE](/assets/references/slider-products-mobile.png)
-        - Traer los productos de la vitrina a través de la [API](https://api-catalog-main-production.up.railway.app)
+        - Traer los productos de la vitrina a través de la [API](https://api-catalog-main-production.up.railway.app) desde los endpoints [GET ONE](https://api-catalog-main-production.up.railway.app/api/product/67609d69c716dfbf7ecfb6d2) y [GET ALL](https://api-catalog-main-production.up.railway.app/api/product)
         - Vitrina de productos responsivo y funcional
-        - La elección de talla y agregar al carrito funcional
-        - Para el summary product la elección de talla y botón de agregar al carrito se muestra unicamente en desktop cuando el puntero se posiciona encima del producto [REFERENCE_STATIC](/assets/references/summary-product.png) & [REFERENCE_HOVER](/assets/references/summary-product-hover.png)
+        - Summary o resumen de producto con la **elección de talla** (cada producto de la [API](https://api-catalog-main-production.up.railway.app) contiene un ID en skuSpecifications para cada talla) y **botón de agregar** al carrito [REFERENCE_STATIC](/assets/references/summary-product-hover.png).
     - Finalmente el Footer responsivo con sus respectivos iconos
 
         > Usar preferiblemente una versión estable de node.js superior a v16
-
-
-    **Versión Desktop**
-
-    ![Home Desktop](/assets/references/mockup-desktop.png)
-
-    **Versión Mobile**
-
-    ![Home mobile](/assets/references/mockup-mobile.png)
 
 
 ### Publicación:
 - **Back-end (server):** Publicar en [Railway (Opcional)](https://railway.app/).
 - **Front-end (client):** Publicar en [GitHub Pages (Opcional)](https://pages.github.com/).
 
-> **Nota:** Es obligatorio compartir el repositorio.
+> **Nota:** Es obligatorio compartir el repositorio del desarrollo a este correo coordinador.plataforma@mic.com.co
 
 
 ### Recomendaciones:
