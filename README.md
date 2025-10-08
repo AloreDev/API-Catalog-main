@@ -25,7 +25,7 @@ Desarrolla la página home **[moviesshop.co](https://www.moviesshop.co)** de acu
 
 
 ### Back-end:
-- Para la consulta de los productos de la tienda usar la siguiente [API](https://api-catalog-main-production.up.railway.app), desde aquí podra obtener los datos necesarios a través de los endpoints de [GET ONE](https://api-catalog-main-production.up.railway.app/api/product/67609d69c716dfbf7ecfb6d2) y [GET ALL](https://api-catalog-main-production.up.railway.app/api/product)
+- Para la consulta de los productos de la tienda usar la siguiente [API](https://dear-cornie-aloredev-7be04bf1.koyeb.app/), desde aquí podra obtener los datos necesarios a través de los endpoints de [GET ONE](https://dear-cornie-aloredev-7be04bf1.koyeb.app/api/product/67609d69c716dfbf7ecfb6d2) y [GET ALL](https://dear-cornie-aloredev-7be04bf1.koyeb.app/api/product)
 - Implementar los endpoints en Node.js que permita consumir y almacenar las compras del carrito
 - Crear los esquemas necesarios para realizar las consultas sobre la colección de compras en MongoDB.
 
@@ -83,7 +83,7 @@ En este repositorio encontrarás todos los recursos necesarios para el desarroll
 
 
 ### Publicación:
-- **Back-end (server):** Publicar en [Railway (Opcional)](https://railway.app/).
+- **Back-end (server):** Publicar en [Railway (Opcional)](https://www.koyeb.com/).
 - **Front-end (client):** Publicar en [GitHub Pages (Opcional)](https://pages.github.com/).
 
 > **Nota:** Es obligatorio compartir el repositorio del desarrollo a este correo coordinador.plataforma@mic.com.co
