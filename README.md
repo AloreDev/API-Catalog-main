@@ -13,6 +13,7 @@ Desarrolla la página home **[moviesshop.co](https://www.moviesshop.co)** de acu
 | NodeJS | Puede usar frameworks como Express |
 | MongoDB | Para la consulta y manipulación de datos puede usar GraphQL (opcional) |
 
+> **Nota:** En caso de tener alguna dificultad con el repositorio y/o recursos escribir a este correo: pedidosprueba123@gmail.com
 
 ### Base de Datos:
 - Crea una colección en MongoDB para **almacenar los datos de la compra** con los siguientes campos
@@ -83,8 +84,8 @@ En este repositorio encontrarás todos los recursos necesarios para el desarroll
 
 
 ### Publicación:
-- **Back-end (server):** Publicar en [Railway (Opcional)](https://www.koyeb.com/).
-- **Front-end (client):** Publicar en [GitHub Pages (Opcional)](https://pages.github.com/).
+- **Back-end (server):** Publicar en [Koyeb](https://www.koyeb.com/) (Opcional).
+- **Front-end (client):** Publicar en [GitHub Pages](https://pages.github.com/) (Opcional).
 
 > **Nota:** Es obligatorio compartir el repositorio del desarrollo a este correo coordinador.plataforma@mic.com.co
 
