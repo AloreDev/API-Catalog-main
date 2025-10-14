@@ -13,10 +13,10 @@ Desarrolla la página home **[moviesshop.co](https://www.moviesshop.co)** de acu
 | NodeJS | Puede usar frameworks como Express |
 | MongoDB | Para la consulta y manipulación de datos puede usar GraphQL (opcional) |
 
-> **Nota:** En caso de tener alguna dificultad con el repositorio y/o recursos escribir a este correo: pedidosprueba123@gmail.com
+> **Nota:** En caso de tener alguna dificultad con el repositorio y/o recursos escribir a este correo: coordinador.plataforma@mic.com.co
 
 ### Base de Datos:
-- Crea una colección en MongoDB para **almacenar los datos de la compra** con los siguientes campos
+- Crea una colección en MongoDB (puede ser con tu propio DB en [MongoDB](https://cloud.mongodb.com/)) para **almacenar los datos de la compra** con los siguientes campos
     - ID del pedido
     - Fecha de compra
     - Documento del cliente
